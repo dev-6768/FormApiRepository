@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Form</title>
+</head>
+<body bgcolor="cyan">
+<form action="{{ url_for("form")}}" method="post">
+<p><h1><center><marquee>Do the required to get in touch :)</marquee></center></h1></p>
+<p>Your First Name:<br>
+<input type="text" id="firstname" name="fname" placeholder="firstname"><br>
+</p>
+<p>Your Last Name:<br> 
+<input type="text" id="lastname" name="lname" placeholder="lastname"><br>
+</p>
+<p>Your Email Id:<br>
+<input type="text" id="email" name="email" placeholder="Email ID"><br>
+</p>
+<p>Your Phone Number(With Country Code):<br>
+<input type="text" id="number" name="number" placeholder="Your phone no."><br>
+</p>
+<p>Your LinkedIn or any other Social Media handle link:<br>
+<input type="text" id="shandle" name="shandle" placeholder="shandle">
+</p>
+	
+<p>What are your favourites ? Enter your most favourite song.<br>
+<input type="text" id="fsong" name="fsong" placeholder="fsong"><br>
+</p>
+	
+<p>Which College or School Do you Belong ?<br>
+<input type="text" id="fschool" name="fschool" placeholder="fschool"><br>
+</p>
+
+<p>Enter Your Age-Group<br>
+<input type="radio" id="initialAge" name="initialAge" value="0-10 years">
+<label for="initialAge">0-10 years</label><br>
+<input type="radio" id="middleAge" name="middleAge" value="10-15 years">
+<label for="middleAge">10-15 years</label><br>
+<input type="radio" id="adult" name="adult" value="15-18 years">
+<label for="adult">15-18 years</label><br>
+<input type="radio" id="graduate" name="graduate" value="18-25 years">
+<label for="graduate">18-25 years</label><br>
+<input type="radio" id="jobAge" name="jobAge" value="25-35 years">
+<label for="jobAge">25-35 years</label><br>
+<input type="radio" id="seniorAge" name="seniorAge" value="35+ years">
+<label for="seniorAge">25-35 years</label><br>
+</p>
+	
+<p>Choose your field of practice :<br>
+<input type="text" id="practice" name="practice" placeholder="Which field are you practicing ?">
+</p>
+	
+<p>What do you like the most about your place ?<br>
+<textarea name="preference" rows="10" cols="60">What do you like the most about your place ?</textarea>
+</p>	
+	
+<p>If any comments, you can write them below<br>
+<textarea name="comments" rows="10" cols="60">Comments, If any.</textarea>	
+</p>
+
+<input type="submit" value="Submit">	
+<input type="reset" value="Reset">
+<form>
+</body>
+</html>
