@@ -45,14 +45,8 @@ def form():
         collectionInstance = dbInstance['dataCollection']
         
         collectionInstance.insert_one(dataDictionary)
-        
-        fieldVar = ""
-        for i in ["Initial", "Middle", "Adult", "Graduate", "Job", "Senior"]:
-            if(dupDictionary[i] != "None"):
-                fieldVar = dupDictionary[i]
-                
-        
-        return "You have entered the following details into the form :\nName : "+dupDictionary["Name"]+"\n"+"Email Handle : "+dupDictionary[emailHandle]+"\n"+"Social Media Handle : "+dupDictionary[socialHandle]+"\n"+"Phone No."+dupDictionary[phoneNo]+"\n"+"Favourite Song : "+dupDictionary["Favourite Song"]+"\n"+"Your School : "+dupDictionary["Your School/College"]+"\n"+"Your Age : "+fieldVar+"\n"+"Your Practice : "+dupDictionary["Practice"]+"\n"+"Your Preferences : "+dupDictionary["Preferences"]+"\n"+"Comments : "+dupDictionary["Comments"]
+       
+        return dupDictionary
     
     return render_template("smallForm.html")
 
