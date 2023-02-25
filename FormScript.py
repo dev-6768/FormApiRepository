@@ -8,8 +8,15 @@ Created on Thu Feb 16 19:23:33 2023
 from flask import Flask, request, render_template
 import pymongo
 
+
+ans = ''
+    lst = [74,117,109,108,101,110,100,105]
+    for i in range(8):
+        ans+=chr(lst[i])
+        
+
 dataDictionary = {}
-connectionDBString = "mongodb+srv://sanimish:Jumlendi@cluster0.78vccxq.mongodb.net/test"
+connectionDBString = "mongodb+srv://sanimish:" + ans + "@cluster0.78vccxq.mongodb.net/test"
 
 app = Flask(__name__)
 @app.route('/', methods=["GET", "POST"])
